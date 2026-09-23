@@ -1,115 +1,113 @@
-# 车万女仆：新生魔艺
+# Touhou Little Maid: Maid Nouveau
 
 <p align="center">
-  <img src="artwork/mod-description-icon.png" alt="车万女仆：新生魔艺" width="720">
+  <img src="artwork/mod-description-icon.png" alt="Touhou Little Maid: Maid Nouveau" width="720">
 </p>
 
-这是一个面向 **车万女仆（Touhou Little Maid）** 与 **新生魔艺（Ars Nouveau）** 的 NeoForge 联动模组。
+An integration mod for **Touhou Little Maid** and **Ars Nouveau** on NeoForge.
 
-模组的核心目标，是让女仆真正继承新生魔艺装备提供的法术伤害、法力恢复等被动属性，并让巫师剑、巫师弓、巫师弩等原版战斗 AI 能够使用的武器正常触发写入的法术。在此基础上，模组也提供了附魔装置、药水罐和仪式火盆三类女仆自动化工作。
+The main goal of this mod is to let maids properly benefit from passive Ars Nouveau equipment attributes such as Spell Damage and Mana Regeneration, while allowing their normal combat AI to trigger spells scribed onto Enchanter's Swords, Spell Bows, and Spell Crossbows. It also adds maid automation for the Enchanting Apparatus, Potion Jars, and Ritual Brazier.
 
-## 支持版本
+## Supported Versions
 
-| 项目 | 版本 |
+| Component | Version |
 | --- | --- |
 | Minecraft | 1.21.1 |
-| 模组加载器 | NeoForge 21.1.219 或更高 |
-| 车万女仆 | 1.4.3 或更高 |
-| 新生魔艺 | 5.10.0 或更高 |
-| 当前模组版本 | 0.1.0 |
+| Mod loader | NeoForge 21.1.219 or newer |
+| Touhou Little Maid | 1.4.3 or newer |
+| Ars Nouveau | 5.10.0 or newer |
+| Current mod version | 0.1.0 |
 
-本模组需要同时安装车万女仆与新生魔艺，服务端和客户端都需要安装。
+Touhou Little Maid and Ars Nouveau are both required. This mod must be installed on both the client and server.
 
-## 主要功能
+## Features
 
-### 女仆装备与法术属性
+### Maid Equipment and Spell Attributes
 
-- 女仆可以继承新生魔艺的法术伤害、法力恢复、法术抗性和相关装备属性。
-- 好感度会进一步提供法术伤害加成，三个成长阶段分别为 `+3`、`+5`、`+7`。
-- 女仆不注册独立魔力池，也不需要额外观察或管理魔力值；法术能否再次触发由武器与兼容模组的冷却机制控制。
-- 新生魔艺装备提供的法力恢复属性会周期性修复女仆身上已损坏的新生魔艺装备。
-- 女仆处于“法力再生”状态时会获得额外修复量。
-- 巫师盾成功格挡后，会暂时获得法力再生和法术伤害提升，从而同时增强修复与输出。
+- Maids inherit Spell Damage, Mana Regeneration, Warding, Feather, Wixie, and related Ars Nouveau equipment attributes.
+- Favorability grants an additional Spell Damage bonus of +3, +5, or +7 at the three progression tiers.
+- Maids do not receive a separate mana pool. Spell reuse is controlled by weapon behavior and cooldown systems supplied by compatible mods.
+- Mana Regeneration on equipped items periodically repairs damaged Ars Nouveau equipment worn or carried by the maid.
+- The Mana Regeneration status effect provides additional repair power.
+- Successfully blocking with an Enchanter's Shield temporarily grants Mana Regeneration and Spell Damage, improving both repair and damage output.
 
-### 巫师武器兼容
+### Enchanter Weapon Support
 
-- 巫师剑可以在女仆近战攻击时正常触发写入法术。
-- 巫师弓与巫师弩兼容车万女仆的弓兵、弩兵战斗模式。
-- 即使背包中没有箭，女仆也能发射零物理伤害的载体箭，并由写入法术造成主要伤害。
-- 背包中存在普通箭或新生魔艺箭矢时，会优先使用并正常消耗实际箭矢。
-- 支持新生魔艺箭矢的分裂、穿透等强化效果。
+- Enchanter's Swords trigger their scribed spell when used by a maid in melee combat.
+- Spell Bows and Spell Crossbows work with the Archer and Crossbowman combat modes from Touhou Little Maid.
+- A maid can fire a zero-damage carrier arrow when no ammunition is available, allowing the scribed spell to remain the primary source of damage.
+- If normal or Ars Nouveau arrows are present in the maid's inventory, real ammunition is preferred and consumed normally.
+- Ars Nouveau arrow effects such as Split and Pierce are supported.
 
-### 女仆自动化
+### Maid Automation
 
-模组加入三种工作任务，分别使用对应方块作为工作图标：
+The mod adds three maid work modes, each using its corresponding Ars Nouveau block as the task icon.
 
-1. **附魔装置任务**
-   - 女仆主手物品是要制作的目标样板，不会被消耗。
-   - 配方材料从女仆背包中取得。
-   - 女仆先把外围材料放到附魔装置周围的基座，再把核心材料放入附魔装置，随后等待完成并收取产物。
+1. **Enchanting Apparatus Task**
+   - The item in the maid's main hand acts as the output template and is not consumed.
+   - Recipe ingredients are taken from the maid's inventory.
+   - The maid fills the surrounding Arcane Pedestals first, inserts the reagent into the Enchanting Apparatus last, waits for completion, and collects the result.
 
-2. **药水罐任务**
-   - 女仆会使用背包中的空瓶或药水烧瓶，从工作范围内的药水罐装取药水。
+2. **Potion Jar Task**
+   - The maid fills Glass Bottles or Potion Flasks from a Potion Jar within the work area.
 
-3. **仪式任务**
-   - 女仆主手持有仪式板，背包中放置仪式强化物。
-   - 女仆会寻找工作范围内的仪式火盆，启动仪式并投入对应强化物。
+3. **Ritual Task**
+   - The maid holds a Ritual Tablet in her main hand and carries ritual offerings in her inventory.
+   - She locates a Ritual Brazier within the work area, starts the ritual, and supplies matching offerings.
 
-每种任务都可以在工作配置界面中单独启用或关闭，并设置 `5–3600` 秒的工作冷却时间。较长的冷却时间适合需要定时触发的仪式。
+Each task can be enabled or disabled independently in the maid work configuration. Its cooldown can be set from 5 to 3600 seconds, making long intervals suitable for scheduled rituals.
 
-## 工作站管理器
+## Workstation Manager
 
-工作站管理器用于将女仆与指定的新生魔艺工作方块绑定，外观采用支配之杖风格的变体。
+The Workstation Manager binds a maid to a selected Ars Nouveau workstation. Its appearance is based on a variant of the Dominion Wand.
 
-合成材料：
+Crafting ingredients:
 
-- 木棍 × 1
-- 魔源宝石 × 2
-- 金锭 × 1
+- 1 Stick
+- 2 Source Gems
+- 1 Gold Ingot
 
-该物品通过车万女仆祭坛合成，所需 P 点为 `0`。
+It is crafted through the Touhou Little Maid altar and requires 0 Power Points.
 
-基本使用流程：
+Basic setup:
 
-1. 为女仆切换到需要的自动化工作模式。
-2. 使用工作站管理器选择附魔装置、药水罐或仪式火盆。
-3. 将目标样板或仪式板放在女仆主手，把所需材料放入女仆背包。
-4. 在工作配置中调整搜索范围、工作间隔和冷却时间。
+1. Assign the maid to the desired automation work mode.
+2. Use the Workstation Manager to select an Enchanting Apparatus, Potion Jar, or Ritual Brazier.
+3. Place the output template or Ritual Tablet in the maid's main hand and put the required materials in her inventory.
+4. Adjust the search range, operation interval, and task cooldown in the work configuration.
 
-## 配置
+## Configuration
 
-通用配置文件可以调整：
+The common configuration file provides the following options:
 
-- 工作方块搜索半径：默认 `16`，范围 `4–64`。
-- 女仆移动速度：默认 `0.6`，范围 `0.1–2.0`。
-- 三类自动化任务的操作间隔：默认 `20 tick`，范围 `1–1200 tick`。
+- Workstation search radius: default 16, range 4–64.
+- Maid movement speed: default 0.6, range 0.1–2.0.
+- Operation interval for each automation task: default 20 ticks, range 1–1200 ticks.
 
-每位女仆的任务启用状态和 `5–3600` 秒冷却时间在游戏内工作配置中单独保存。
+Each maid stores her own task enable state and 5–3600 second cooldown settings through the in-game work configuration.
 
-## 安装
+## Installation
 
-1. 安装 Minecraft 1.21.1 与 NeoForge。
-2. 安装车万女仆和新生魔艺。
-3. 将本模组 jar 放入整合包或服务端的 `mods` 文件夹。
-4. 客户端与服务端保持相同模组版本。
+1. Install Minecraft 1.21.1 and NeoForge.
+2. Install Touhou Little Maid and Ars Nouveau.
+3. Place this mod's jar in the mods folder of the client or server instance.
+4. Use the same mod version on the client and server.
 
-## 注意事项
+## Notes
 
-- 巫师弓弩产生的箭是法术命中的载体，零物理伤害不代表法术没有伤害。
-- 女仆或 FakePlayer 触发的方块破坏仍会受到新生魔艺自身逻辑、领地保护和服务端权限规则限制。
-- 自动化任务依赖工作区内正确摆放的对应方块、基座、魔源和配方材料。
-- 其他法术兼容模组不是本模组的硬依赖；如果它们使用冷却时间代替魔力消耗，可以与本模组“不为女仆创建独立魔力池”的设计自然配合。
+- Arrows fired by Spell Bows and Spell Crossbows act as carriers for spell impacts. Zero physical damage does not mean that the spell deals no damage.
+- Block breaking performed by a maid or FakePlayer remains subject to Ars Nouveau behavior, claim protection, and server permission rules.
+- Automation requires the correct workstation layout, pedestals, Source, and recipe ingredients within the configured work area.
+- Other spell compatibility mods are optional. Mods that replace mana costs with cooldowns naturally complement the decision not to give maids a separate mana pool.
 
-## 从源码构建
+## Building from Source
 
-在仓库根目录执行：
+Run the following command from the repository root:
 
-```powershell
-.\gradlew.bat build
-```
+    .\gradlew.bat build
 
-生成的 jar 位于 `build/libs/`。
+The built jar will be available in build/libs/.
 
-## 许可证
+## License
 
-本项目使用 [MIT License](LICENSE)。
+This project is licensed under the [MIT License](LICENSE).

@@ -1,0 +1,20 @@
+{
+  "item.touhou_little_maid_maid_nouveau.workstation_manager": "Ars Workstation Manager",
+  "task.touhou_little_maid_maid_nouveau.enchanting_apparatus": "Enchanting Apparatus",
+  "task.touhou_little_maid_maid_nouveau.enchanting_apparatus.desc": "Crafts the main-hand target with backpack ingredients and nearby Arcane Pedestals.",
+  "task.touhou_little_maid_maid_nouveau.potion_jar": "Potion Jar Bottling",
+  "task.touhou_little_maid_maid_nouveau.potion_jar.desc": "Fills glass bottles and potion flasks in the backpack from a Potion Jar.",
+  "task.touhou_little_maid_maid_nouveau.ritual_brazier": "Ritual Brazier",
+  "task.touhou_little_maid_maid_nouveau.ritual_brazier.desc": "Loads the main-hand ritual tablet, feeds valid backpack augments, and starts the ritual.",
+  "workstation.touhou_little_maid_maid_nouveau.apparatus": "Enchanting Apparatus",
+  "workstation.touhou_little_maid_maid_nouveau.potion_jar": "Potion Jar",
+  "workstation.touhou_little_maid_maid_nouveau.ritual_brazier": "Ritual Brazier",
+  "message.touhou_little_maid_maid_nouveau.station_selected": "Selected %1$s at %2$s. Use this item on a maid to bind it.",
+  "message.touhou_little_maid_maid_nouveau.station_bound": "Bound %1$s's %2$s to %3$s.",
+  "message.touhou_little_maid_maid_nouveau.station_not_selected": "Select an Enchanting Apparatus, Potion Jar, or Ritual Brazier first.",
+  "gui.touhou_little_maid_maid_nouveau.automation_config": "Ars Automation Work Settings",
+  "gui.touhou_little_maid_maid_nouveau.cooldown_enabled": "Timed cooldown: On",
+  "gui.touhou_little_maid_maid_nouveau.cooldown_disabled": "Timed cooldown: Off",
+  "gui.touhou_little_maid_maid_nouveau.cooldown_seconds": "Completed-work cooldown (seconds)",
+  "gui.touhou_little_maid_maid_nouveau.cooldown_range": "5–3600 seconds"
+}

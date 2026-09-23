@@ -1,0 +1,46 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "MIT"
+
+[[mods]]
+modId = "touhou_little_maid_maid_nouveau"
+version = "0.1.0"
+displayName = "Touhou Little Maid: Maid Nouveau"
+authors = "Maid Nouveau contributors"
+description = '''
+Combat and automation integration between Touhou Little Maid and Ars Nouveau.
+'''
+
+[[dependencies.touhou_little_maid_maid_nouveau]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.219,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.touhou_little_maid_maid_nouveau]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.21.2)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.touhou_little_maid_maid_nouveau]]
+modId = "touhou_little_maid"
+type = "required"
+reason = "Maid Nouveau extends Touhou Little Maid entities and tasks."
+versionRange = "[1.4.3,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.touhou_little_maid_maid_nouveau]]
+modId = "ars_nouveau"
+type = "required"
+reason = "Maid Nouveau integrates Ars Nouveau equipment and spells."
+versionRange = "[5.10.0,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[mixins]]
+config = "touhou_little_maid_maid_nouveau.mixins.json"
+

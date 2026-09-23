@@ -1,0 +1,20 @@
+{
+  "item.touhou_little_maid_maid_nouveau.workstation_manager": "魔艺工作站管理器",
+  "task.touhou_little_maid_maid_nouveau.enchanting_apparatus": "附魔装置",
+  "task.touhou_little_maid_maid_nouveau.enchanting_apparatus.desc": "以主手物品为合成目标，使用背包材料操作附魔装置与奥术基座。",
+  "task.touhou_little_maid_maid_nouveau.potion_jar": "药水罐装瓶",
+  "task.touhou_little_maid_maid_nouveau.potion_jar.desc": "使用背包中的玻璃瓶或药水烧瓶，从药水罐装取药水。",
+  "task.touhou_little_maid_maid_nouveau.ritual_brazier": "仪式火盆",
+  "task.touhou_little_maid_maid_nouveau.ritual_brazier.desc": "使用主手仪式板装载仪式，将背包内可用强化物投入火盆并开始仪式。",
+  "workstation.touhou_little_maid_maid_nouveau.apparatus": "附魔装置",
+  "workstation.touhou_little_maid_maid_nouveau.potion_jar": "药水罐",
+  "workstation.touhou_little_maid_maid_nouveau.ritual_brazier": "仪式火盆",
+  "message.touhou_little_maid_maid_nouveau.station_selected": "已选择 %1$s（%2$s），再对女仆使用以完成绑定。",
+  "message.touhou_little_maid_maid_nouveau.station_bound": "已将 %1$s 的 %2$s 绑定到 %3$s。",
+  "message.touhou_little_maid_maid_nouveau.station_not_selected": "请先对附魔装置、药水罐或仪式火盆使用管理器。",
+  "gui.touhou_little_maid_maid_nouveau.automation_config": "魔艺自动化工作配置",
+  "gui.touhou_little_maid_maid_nouveau.cooldown_enabled": "定时冷却：开启",
+  "gui.touhou_little_maid_maid_nouveau.cooldown_disabled": "定时冷却：关闭",
+  "gui.touhou_little_maid_maid_nouveau.cooldown_seconds": "完整工作冷却（秒）",
+  "gui.touhou_little_maid_maid_nouveau.cooldown_range": "5–3600 秒"
+}
